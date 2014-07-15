@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+	<script src="./slider.js"></script>
+</head>
+<body>
+	<div id="my-slider">
+		<img src="./img/1.jpg">
+	    <img src="./img/2.jpg">
+		<img src="./img/3.jpg">
+		<img src="./img/4.jpg">
+		<img src="./img/5.jpg">
+		<img src="./img/6.jpg">
+		<img src="./img/7.jpg">
+	</div>
+	<script>
+	   $(function() {
+	   	  $("#my-slider").divToSlider({
+	   	  	width: 1080,
+	   	  	height: 800,
+	   	  	frequency: 1000,
+	   	  	dot_container_background: "rgba(255,255,255,0.3)",
+	   	  	dot_container_border_radius: "20px",
+	   	  	dot_container_height: "20px",
+	   	  	dot_height: "12px",
+	   	  	dot_width: "12px",
+	   	  	dot_margin: "3px",
+	   	  	dot_color: "#B7B7B7",
+	   	  	dot_selected_color: "#F40",
+	   	  	dot_container_position: {
+	   	  		left: "45%",
+	   	  		bottom: "15px"
+	   	  	}
+	   	  });
+	   })
+	</script>
+</body>
+</html>
